@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { Typewriter } from "nextjs-simple-typewriter";
 
 export default function Home() {
@@ -29,7 +30,7 @@ export default function Home() {
       <div className="relative z-2 flex flex-col items-center justify-center h-full text-center text-white">
         <div className="justify-center items-center flex flex-col">
           <div className="App">
-            <h1 className="font-black text-9xl tracking-tighter text-white">
+            <h1 className="font-black lg:text-9xl md:text-8xl sm:text-7xl text-6xl tracking-tighter text-orange-600">
               <span className="">
                 {/* Typewriter effect */}
                 <Typewriter
@@ -44,7 +45,7 @@ export default function Home() {
                   loop={Infinity}
                   cursor
                   cursorStyle="_"
-                  typeSpeed={100}
+                  typeSpeed={150}
                   deleteSpeed={50}
                   delaySpeed={1000}
                   onLoopDone={handleDone}
@@ -57,7 +58,7 @@ export default function Home() {
       </div>
 
       {/* Sous-titre fixe centré en bas */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-11/12 z-10 text-center">
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-11/12 z-2 text-center">
         <p className="text-lg text-white font-light">
           Découvrez le paradis caché du Bénin, où mer et traditions
           s'entrelacent pour vous offrir un voyage inoubliable.
@@ -65,9 +66,11 @@ export default function Home() {
 
         {/* Bouton sous le sous-titre */}
         <div className="mt-4">
-          <button className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-all">
-            Explorer plus
-          </button>
+          <Link href="/home">
+            <button className="bg-orange-600 text-white px-6 py-3 rounded-full hover:bg-orange-700 transition-all">
+              Explorer plus
+            </button>
+          </Link>
         </div>
       </div>
     </div>
