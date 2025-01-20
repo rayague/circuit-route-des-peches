@@ -32,33 +32,157 @@ export default function Home() {
       </div>
       <div className="w-full bg-slate-800 p-4 rounded-lg bo my-16  shadow-lg shadow-orange-900">
         <p className="text-lg font-light">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae placeat
-          quasi consequuntur molestias similique ullam at eius a praesentium
-          autem fuga recusandae voluptates sapiente ab, alias illo, vitae vel
-          in? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          vero repellat doloremque distinctio, sit placeat possimus, eaque
-          sapiente a sed adipisci quaerat perspiciatis officia voluptas
-          temporibus velit nobis quidem eligendi quo harum aperiam voluptates
-          pariatur. Consequuntur rem animi eligendi harum ut commodi odit
-          temporibus, adipisci tempora facilis autem nisi quibusdam magni
-          architecto nam fugiat at itaque dolore vitae totam ullam ex. Natus
-          tenetur neque eos temporibus debitis molestias animi ipsam eum harum,
-          accusantium deleniti? Nobis, sed voluptatibus exercitationem natus
-          illum dolorum minima ullam id sapiente officia sint ipsam architecto
-          pariatur doloremque eum nisi esse dicta assumenda inventore! Sit
-          dignissimos quidem fuga asperiores, magni neque necessitatibus esse
-          vero quas maxime voluptatem facilis illum reiciendis veniam inventore
-          hic reprehenderit velit a corporis aperiam. Praesentium cum ipsam
-          incidunt quo facilis repellat fugiat nisi ut. Doloremque esse quam
-          libero. Asperiores voluptatibus vel porro omnis veniam aliquid nostrum
-          dolorem aliquam eaque aut adipisci reprehenderit voluptas cum, dolor
-          doloremque quam voluptatem necessitatibus veritatis dolores quibusdam?
-          Quod, eos. Id dolorum veritatis repellat dolorem accusantium fugiat!
-          Soluta quasi molestiae ipsa rem autem enim eaque nostrum officiis!
-          Velit eligendi consequatur rem corporis! Tempore hic voluptatum soluta
-          natus in consectetur unde modi quos libero, assumenda veritatis
-          obcaecati eligendi deserunt sapiente.
+          La{" "}
+          <span className="text-2xl text-orange-600 font-bold">
+            Route des Pêches
+          </span>{" "}
+          est bien plus qu'un simple itinéraire, c'est un véritable voyage
+          sensoriel au cœur de la Provence, où chaque kilomètre parcouru vous
+          dévoile une nouvelle merveille. S'étendant sur environ{" "}
+          <span className="text-2xl text-orange-600 font-bold">
+            100 kilomètres
+          </span>{" "}
+          à travers les magnifiques départements du Var et des Alpes-Maritimes,
+          elle vous invite à découvrir un paysage où la nature et l'authenticité
+          de la région se rencontrent à chaque virage. Au fil de la route, les
+          vergers de pêches s'étendent à perte de vue, offrant une explosion de
+          couleurs et de parfums grâce aux fruits mûrs, juteux et sucrés,
+          récoltés directement sur les arbres. Vous croiserez des villages
+          typiques de la Provence, comme Fréjus, où l'histoire romaine se mêle à
+          l'atmosphère méditerranéenne, et Puget-sur-Argens, un charmant village
+          aux rues étroites et pavées, où la douceur de vivre semble flotter
+          dans l'air. La route traverse également le massif de l'Esterel, dont
+          les montagnes aux formes sculptées par le vent et le temps offrent des
+          panoramas à couper le souffle sur la mer Méditerranée. Les plages
+          immaculées de la région, comme celles de Bormes-les-Mimosas, sont des
+          havres de paix parfaits pour se détendre après une journée de
+          découvertes. En chemin, ne manquez pas les marchés provençaux,
+          regorgeant de produits artisanaux locaux, où vous pourrez déguster des
+          pêches gorgées de soleil, des confitures maison, du miel parfumé, ou
+          encore des vins du Var aux arômes envoûtants. Les amateurs d'histoire
+          seront comblés par les vestiges antiques de Fréjus, avec son
+          amphithéâtre romain et son musée archéologique, témoins du riche passé
+          de cette région. La Route des Pêches est également un paradis pour les
+          amoureux de la nature et des activités de plein air : des randonnées
+          inoubliables dans le massif de l'Esterel aux activités nautiques le
+          long des plages. Chaque étape est une nouvelle occasion d'explorer les
+          paysages grandioses de la région, de goûter à des saveurs locales
+          exquises et de plonger dans un patrimoine culturel et naturel
+          incomparable. Ce parcours, parsemé de merveilles et de découvertes,
+          vous promet une immersion totale dans la beauté sauvage et la douceur
+          de vivre de la Provence.
         </p>
+      </div>
+
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div>
+          <Image
+            className="h-auto max-w-full rounded-lg"
+            src="/image3.webp"
+            alt=""
+            width={500}
+            height={100}
+          />
+        </div>
+        <div>
+          <Image
+            className="h-auto max-w-full rounded-lg"
+            src="/image3.webp"
+            alt=""
+            width={500}
+            height={100}
+          />
+        </div>
+        <div>
+          <Image
+            className="h-auto max-w-full rounded-lg"
+            src="/image3.webp"
+            alt=""
+            width={500}
+            height={100}
+          />
+        </div>
+        <div>
+          <Image
+            className="h-auto max-w-full rounded-lg"
+            src="/image3.webp"
+            alt=""
+            width={500}
+            height={100}
+          />
+        </div>
+        <div>
+          <Image
+            className="h-auto max-w-full rounded-lg"
+            src="/image3.webp"
+            alt=""
+            width={500}
+            height={100}
+          />
+        </div>
+        <div>
+          <Image
+            className="h-auto max-w-full rounded-lg"
+            src="/image3.webp"
+            alt=""
+            width={500}
+            height={100}
+          />
+        </div>
+        <div>
+          <Image
+            className="h-auto max-w-full rounded-lg"
+            src="/image3.webp"
+            alt=""
+            width={500}
+            height={100}
+          />
+        </div>
+        <div>
+          <Image
+            className="h-auto max-w-full rounded-lg"
+            src="/image3.webp"
+            alt=""
+            width={500}
+            height={100}
+          />
+        </div>
+        <div>
+          <Image
+            className="h-auto max-w-full rounded-lg"
+            src="/image3.webp"
+            alt=""
+            width={500}
+            height={100}
+          />
+        </div>
+        <div>
+          <Image
+            className="h-auto max-w-full rounded-lg"
+            src="/image3.webp"
+            alt=""
+            width={500}
+            height={100}
+          />
+        </div>
+        <div>
+          <Image
+            className="h-auto max-w-full rounded-lg"
+            src="/image3.webp"
+            alt=" /"
+            width={500}
+            height={100}
+          />
+        </div>
+        <div>
+          <Image
+            className="h-auto max-w-full rounded-lg"
+            src="/image3.webp"
+            alt=" /"
+            width={500}
+            height={100}
+          />
+        </div>
       </div>
     </div>
   );
