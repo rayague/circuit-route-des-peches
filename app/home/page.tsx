@@ -209,35 +209,55 @@ export default function Home() {
 
       <div className="my-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
-          <div className="mx-auto rounded-md bg-slate-700 w-full h-72 shadow-lg shadow-orange-900 overflow-hidden ">
-            <video className="w-full h-full object-cover" controls>
-              <source src="/path/to/video1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div className="mx-auto rounded-md bg-slate-700 w-full h-72 shadow-lg shadow-orange-900 overflow-hidden">
+            <iframe
+              className="w-full h-full object-cover"
+              src="https://www.youtube.com/embed/bRR4H6FRvgA"
+              title="Video 1"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
           <div className="mx-auto rounded-md bg-slate-700 w-full h-72 shadow-lg shadow-orange-900 overflow-hidden">
-            <video className="w-full h-full object-cover" controls>
-              <source src="/path/to/video2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              className="w-full h-full object-cover"
+              src="https://www.youtube.com/embed/U6hQA-jKP-k"
+              title="Video 2"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
           <div className="mx-auto rounded-md bg-slate-700 w-full h-72 shadow-lg shadow-orange-900 overflow-hidden">
-            <video className="w-full h-full object-cover" controls>
-              <source src="/path/to/video3.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              className="w-full h-full object-cover"
+              src="https://www.youtube.com/embed/tQyXfDJoSEY"
+              title="Video 3"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
           <div className="mx-auto rounded-md bg-slate-700 w-full h-72 shadow-lg shadow-orange-900 overflow-hidden">
-            <video className="w-full h-full object-cover" controls>
-              <source src="/path/to/video4.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              className="w-full h-full object-cover"
+              src="https://www.youtube.com/embed/w_9nYm0ZrgA"
+              title="Video 4"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
           <div className="mx-auto rounded-md bg-slate-700 w-full h-72 shadow-lg shadow-orange-900 overflow-hidden">
-            <video className="w-full h-full object-cover" controls>
-              <source src="/path/to/video5.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              className="w-full h-full object-cover"
+              src="https://www.youtube.com/embed/r6Xa76uGgBE"
+              title="Video 5"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </div>
@@ -257,19 +277,28 @@ export default function Home() {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="mx-auto rounded-md bg-slate-700 w-full h-72 shadow-lg shadow-orange-900 overflow-hidden">
-            <video className="w-full h-full object-cover" controls>
-              <source src="/path/to/testimonial1.mp4" type="video/mp4" />
-              Votre navigateur ne supporte pas la balise vidéo.
-            </video>
+            <iframe
+              className="w-full h-full object-cover"
+              src="https://www.youtube.com/embed/ln7nV_rX2do"
+              title="Témoignage 1"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
           <div className="mx-auto rounded-md bg-slate-700 w-full h-72 shadow-lg shadow-orange-900 overflow-hidden">
-            <video className="w-full h-full object-cover" controls>
-              <source src="/path/to/testimonial2.mp4" type="video/mp4" />
-              Votre navigateur ne supporte pas la balise vidéo.
-            </video>
+            <iframe
+              className="w-full h-full object-cover"
+              src="https://www.youtube.com/embed/2HoQ2S-ivH4"
+              title="Témoignage 2"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </div>
+
       <div className="p-8 w-full bg-gradient-to-t from-slate-700 to-slate-800 rounded-md mt-8 text-center">
         <h3 className="font-bold text-2xl text-center text-orange-600 mb-4">
           Tipiac Agency
