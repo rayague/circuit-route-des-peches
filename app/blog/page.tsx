@@ -384,7 +384,7 @@ export default function Home() {
         {/* Section des Icônes */}
         <div className="flex justify-center space-x-6 mb-6">
           <a
-            href="https://wa.me/1234567890" // Remplace par ton numéro WhatsApp
+            href="https://wa.me/46538805" // Remplace par ton numéro WhatsApp
             target="_blank"
             rel="noopener noreferrer"
             className="text-white text-3xl hover:text-green-500 transition-all"
@@ -392,7 +392,7 @@ export default function Home() {
             <i className="fab fa-whatsapp"></i>
           </a>
           <a
-            href="https://instagram.com/toncompte" // Remplace par ton compte Instagram
+            href="https://www.instagram.com/tipiacagency?igsh=MXZ0ZGVodW5qbzRrNg==&utm_source=ig_contact_invite" // Remplace par ton compte Instagram
             target="_blank"
             rel="noopener noreferrer"
             className="text-white text-3xl hover:text-pink-500 transition-all"
