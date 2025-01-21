@@ -61,7 +61,7 @@ export default function Home() {
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-11/12 z-2 text-center">
         <p className="text-lg text-white font-bold">
           Découvrez le paradis caché du Bénin, où mer et traditions
-          s&quot;entrelacent pour vous offrir un voyage inoubliable.
+          s&apos;entrelacent pour vous offrir un voyage inoubliable.
         </p>
 
         {/* Bouton sous le sous-titre */}
