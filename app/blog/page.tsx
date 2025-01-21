@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -383,22 +384,22 @@ export default function Home() {
 
         {/* Section des Icônes */}
         <div className="flex justify-center space-x-6 mb-6">
-          <a
+          <Link
             href="https://wa.me/46538805" // Remplace par ton numéro WhatsApp
             target="_blank"
             rel="noopener noreferrer"
             className="text-white text-3xl hover:text-green-500 transition-all"
           >
-            <i className="fab fa-whatsapp"></i>
-          </a>
-          <a
+            <FaWhatsapp size={40} className="text-white" />{" "}
+          </Link>
+          <Link
             href="https://www.instagram.com/tipiacagency?igsh=MXZ0ZGVodW5qbzRrNg==&utm_source=ig_contact_invite" // Remplace par ton compte Instagram
             target="_blank"
             rel="noopener noreferrer"
             className="text-white text-3xl hover:text-pink-500 transition-all"
           >
-            <i className="fab fa-instagram"></i>
-          </a>
+            <FaInstagram size={40} className="text-white" />{" "}
+          </Link>
         </div>
 
         {/* Formulaire de Newsletter */}
