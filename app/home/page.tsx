@@ -1,15 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { useState, useEffect } from "react";
-import dynamic from "next/dynamic";
-// import MapWithMarkers from "../../components/MapWithMarkers"
-
-const MapWithNoSSR = dynamic(() => import("../../components/MapWithMarkers"), {
-  ssr: false
-});
 
 export default function Home() {
   return (
@@ -45,16 +37,16 @@ export default function Home() {
           <span className="text-xl text-orange-600 font-normal">
             Route des Pêches du Bénin
           </span>{" "}
-          est bien plus qu'un simple itinéraire, c'est un véritable voyage
-          sensoriel à travers le Bénin, où chaque étape vous plonge dans
-          l'authenticité et la beauté de la côte béninoise. S'étendant sur
-          environ{" "}
+          est bien plus qu&quot;un simple itinéraire, c&quot;est un véritable
+          voyage sensoriel à travers le Bénin, où chaque étape vous plonge dans
+          l&quot;authenticité et la beauté de la côte béninoise. S&quot;étendant
+          sur environ{" "}
           <span className="text-xl text-orange-600 font-normal">
             100 kilomètres
           </span>{" "}
-          le long de l'Atlantique, elle vous invite à découvrir des paysages
-          pittoresques, des plages magnifiques et des villages de pêcheurs
-          traditionnels. Au fil de la route, vous découvrirez de{" "}
+          le long de l&quot;Atlantique, elle vous invite à découvrir des
+          paysages pittoresques, des plages magnifiques et des villages de
+          pêcheurs traditionnels. Au fil de la route, vous découvrirez de{" "}
           <span className="text-xl text-orange-600 font-normal">
             nombreuses plages
           </span>{" "}
@@ -89,17 +81,17 @@ export default function Home() {
           ou{" "}
           <span className="text-2xl text-orange-600 font-normal">Ganvié</span>{" "}
           un village construit sur pilotis au cœur du lac Nokoué, souvent
-          surnommé la "Venise de l'Afrique". Ce trajet est aussi un véritable
-          parcours culinaire avec les poissons grillés, le{" "}
+          surnommé la &quot;Venise de l&quot;Afrique&quot;. Ce trajet est aussi
+          un véritable parcours culinaire avec les poissons grillés, le{" "}
           <span className="text-xl text-orange-600 font-normal">
             riz béninois
           </span>
           , les sauces épicées et autres spécialités locales que vous pourrez
           déguster sur les marchés ou dans les restaurants typiques du bord de
           mer. La Route des Pêches du Bénin vous invite donc à un voyage
-          inoubliable à travers la culture, l'histoire et les paysages du pays,
-          tout en vous offrant une immersion dans la vie locale des pêcheurs et
-          des habitants de la région.
+          inoubliable à travers la culture, l&quot;histoire et les paysages du
+          pays, tout en vous offrant une immersion dans la vie locale des
+          pêcheurs et des habitants de la région.
         </p>
       </div>
 
