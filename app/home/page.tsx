@@ -38,14 +38,14 @@ export default function Home() {
           <span className="text-xl text-orange-600 font-normal">
             Route des Pêches du Bénin
           </span>{" "}
-          est bien plus qu&quot;un simple itinéraire, c&quot;est un véritable
+          est bien plus qu&apos;un simple itinéraire, c&apos;est un véritable
           voyage sensoriel à travers le Bénin, où chaque étape vous plonge dans
-          l&quot;authenticité et la beauté de la côte béninoise. S&quot;étendant
+          l&apos;authenticité et la beauté de la côte béninoise. S&apos;étendant
           sur environ{" "}
           <span className="text-xl text-orange-600 font-normal">
             100 kilomètres
           </span>{" "}
-          le long de l&quot;Atlantique, elle vous invite à découvrir des
+          le long de l&apos;Atlantique, elle vous invite à découvrir des
           paysages pittoresques, des plages magnifiques et des villages de
           pêcheurs traditionnels. Au fil de la route, vous découvrirez de{" "}
           <span className="text-xl text-orange-600 font-normal">
@@ -82,7 +82,7 @@ export default function Home() {
           ou{" "}
           <span className="text-2xl text-orange-600 font-normal">Ganvié</span>{" "}
           un village construit sur pilotis au cœur du lac Nokoué, souvent
-          surnommé la &quot;Venise de l&quot;Afrique&quot;. Ce trajet est aussi
+          surnommé la &quot;Venise de l&apos;Afrique&quot;. Ce trajet est aussi
           un véritable parcours culinaire avec les poissons grillés, le{" "}
           <span className="text-xl text-orange-600 font-normal">
             riz béninois
@@ -90,7 +90,7 @@ export default function Home() {
           , les sauces épicées et autres spécialités locales que vous pourrez
           déguster sur les marchés ou dans les restaurants typiques du bord de
           mer. La Route des Pêches du Bénin vous invite donc à un voyage
-          inoubliable à travers la culture, l&quot;histoire et les paysages du
+          inoubliable à travers la culture, l&apos;histoire et les paysages du
           pays, tout en vous offrant une immersion dans la vie locale des
           pêcheurs et des habitants de la région.
         </p>

@@ -370,6 +370,70 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="p-8 w-full bg-gradient-to-t from-slate-700 to-slate-800 rounded-md mt-8 text-center">
+        <h3 className="font-bold text-2xl text-center text-orange-600 mb-4">
+          Tipiac Agency
+        </h3>
+        <p className="text-gray-300 mb-4">
+          Tipiac Agency est votre partenaire idéal pour des expériences de
+          voyage inoubliables. Spécialisée dans l&apos;organisation de circuits
+          sur mesure, nous vous proposons des aventures authentiques au cœur des
+          destinations les plus fascinantes.
+        </p>
+
+        {/* Section des Icônes */}
+        <div className="flex justify-center space-x-6 mb-6">
+          <a
+            href="https://wa.me/1234567890" // Remplace par ton numéro WhatsApp
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white text-3xl hover:text-green-500 transition-all"
+          >
+            <i className="fab fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://instagram.com/toncompte" // Remplace par ton compte Instagram
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white text-3xl hover:text-pink-500 transition-all"
+          >
+            <i className="fab fa-instagram"></i>
+          </a>
+        </div>
+
+        {/* Formulaire de Newsletter */}
+        <div className="mb-4">
+          <h4 className="text-lg text-white mb-2 font-black">
+            Abonnez-vous à notre{" "}
+            <span className="text-orange-600">newsletter</span>
+          </h4>
+          <form
+            action="#"
+            method="POST"
+            className="flex justify-center space-x-1"
+          >
+            <input
+              type="email"
+              placeholder="Entrez votre email"
+              className="p-2 rounded-md text-black w-1/2 lg:w-1/3"
+              required
+            />
+            <button
+              type="submit"
+              className="bg-orange-600 text-white p-2 rounded-md hover:bg-orange-700 transition-all"
+            >
+              S&apos;abonner
+            </button>
+          </form>
+        </div>
+
+        <div className="text-gray-400">
+          <p>
+            © 2025 <span className="text-orange-600">Tipiac Agency</span>. Tous
+            droits réservés.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
