@@ -3,8 +3,34 @@ import Image from "next/image";
 import Link from "next/link";
 import "leaflet/dist/leaflet.css";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { MapContainer, TileLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import { LatLngExpression } from "leaflet";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const center: LatLngExpression = [6.5, 2.5]; // Coordonnée centrale autour du Bénin
+const zoom = 8; // Niveau de zoom
+
+// Liste des villes principales le long de la Route des Pêches du Bénin
+const markers = [
+  { position: [6.35, 2.4], label: "Cotonou" }, // Ville principale
+  { position: [6.5, 2.7], label: "Ouidah" },
+  { position: [6.6333, 2.8667], label: "Grand-Popo" },
+  { position: [6.75, 2.95], label: "Lokossa" },
+  { position: [7.0, 3.2], label: "Comé" }
+];
+
+// Définition de la route entre les différentes villes (en lignes)
+const routeCoordinates = markers.map((marker) => marker.position);
 
 export default function Home() {
+  const showToastMessage = () => {
+    toast.success("Votre email a été envoyé avec succeès !", {
+      position: "top-right"
+    });
+  };
+
   return (
     <div className="relative min-h-screen p-8 pb-12 gap-8 sm:p-8 bg-slate-900">
       <div className=" sticky top-2 flex flex-row p-4 items-center justify-between w-full my-8 rounded-lg backdrop-blur-lg border border-orange-400 font-bold z-50">
@@ -101,7 +127,7 @@ export default function Home() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="/image3.webp"
+            src="/picture2.jpg"
             alt=""
             width={500}
             height={100}
@@ -110,7 +136,7 @@ export default function Home() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="/image3.webp"
+            src="/picture16.jpg"
             alt=""
             width={500}
             height={100}
@@ -119,7 +145,7 @@ export default function Home() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="/image3.webp"
+            src="/picture4.jpg"
             alt=""
             width={500}
             height={100}
@@ -128,7 +154,7 @@ export default function Home() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="/image3.webp"
+            src="/picture5.jpeg"
             alt=""
             width={500}
             height={100}
@@ -137,7 +163,7 @@ export default function Home() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="/image3.webp"
+            src="/picture6.jpg"
             alt=""
             width={500}
             height={100}
@@ -146,7 +172,7 @@ export default function Home() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="/image3.webp"
+            src="/picture7.avif"
             alt=""
             width={500}
             height={100}
@@ -155,7 +181,7 @@ export default function Home() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="/image3.webp"
+            src="/picture8.jpg"
             alt=""
             width={500}
             height={100}
@@ -164,7 +190,7 @@ export default function Home() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="/image3.webp"
+            src="/picture14.jpg"
             alt=""
             width={500}
             height={100}
@@ -173,7 +199,7 @@ export default function Home() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="/image3.webp"
+            src="/picture10.webp"
             alt=""
             width={500}
             height={100}
@@ -182,7 +208,7 @@ export default function Home() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="/image3.webp"
+            src="/picture11.jpeg"
             alt=""
             width={500}
             height={100}
@@ -191,7 +217,7 @@ export default function Home() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="/image3.webp"
+            src="/picture12.jpeg"
             alt=" /"
             width={500}
             height={100}
@@ -200,7 +226,7 @@ export default function Home() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="/image3.webp"
+            src="/picture13.jpeg"
             alt=" /"
             width={500}
             height={100}
@@ -263,16 +289,35 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="my-8">
+      <div className="my-32">
         <h1 className="font-bold text-5xl my-5 text-center">
-          La Route des Pêches - Carte Interactive
+          La Route des Pêches du Bénin - Carte Interactive
         </h1>
-        <div className="mx-auto rounded-md bg-slate-700 w-full h-72 shadow-lg shadow-orange-900">
-          {/* <MapWithNoSSR /> */}
+        <div className="mx-auto rounded-md bg-slate-700 w-full h-96 shadow-lg shadow-orange-900">
+          <MapContainer
+            center={center}
+            zoom={zoom}
+            style={{ height: "100%", width: "100%" }}
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            />
+
+            {/* Affichage des marqueurs pour chaque ville */}
+            {/* {markers.map((marker, index) => (
+              <Marker key={index} position={marker.position}>
+                <Popup>{marker.label}</Popup>
+              </Marker>
+            ))} */}
+
+            {/* Affichage de la route entre les villes sous forme de polyline */}
+            {/* <Polyline positions={routeCoordinates} color="blue" weight={4} /> */}
+          </MapContainer>
         </div>
       </div>
 
-      <div className="my-8">
+      <div className="my-32">
         <h1 className="font-bold text-5xl my-5 text-center">
           Vidéos de Témoignages
         </h1>
@@ -338,8 +383,7 @@ export default function Home() {
             <span className="text-orange-600">newsletter</span>
           </h4>
           <form
-            action="#"
-            method="POST"
+            // onClick={showToastMessage}
             className="flex justify-center space-x-1"
           >
             <input
@@ -350,6 +394,7 @@ export default function Home() {
             />
             <button
               type="submit"
+              onClick={showToastMessage}
               className="bg-orange-600 text-white p-2 rounded-md hover:bg-orange-700 transition-all"
             >
               S&apos;abonner
@@ -364,6 +409,7 @@ export default function Home() {
           </p>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }

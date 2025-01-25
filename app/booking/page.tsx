@@ -3,6 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Typage de l'état du formulaire
 interface FormData {
@@ -38,6 +40,18 @@ export default function Booking() {
     console.log("Réservation effectuée", formData);
   };
 
+  const showToastMessage = () => {
+    toast.success("Votre email a été envoyé avec succeès !", {
+      position: "top-right"
+    });
+  };
+
+  const showBookingMessage = () => {
+    toast.success("Votre Réservation a été envoyé avec succeès !", {
+      position: "top-right"
+    });
+  };
+
   return (
     <div className="relative min-h-screen p-8 pb-12 gap-8 sm:p-8 bg-slate-900">
       <div className="sticky top-2 flex flex-row p-4 items-center justify-between w-full my-8 rounded-lg backdrop-blur-lg border border-orange-400 font-bold z-50">
@@ -60,7 +74,7 @@ export default function Booking() {
         </h3>
 
         <Image
-          src="/image3.webp"
+          src="/image4.jpg"
           width={500}
           height={100}
           className="w-full rounded-lg shadow-lg shadow-orange-900"
@@ -141,8 +155,8 @@ export default function Booking() {
         </div>
       </div>
 
-      <div className="mt-12 bg-slate-800 p-8 rounded-lg shadow-lg shadow-orange-900 w-full max-w-xl mx-auto">
-        <form onSubmit={handleSubmit} className="space-y-6">
+      <div className="my-32 bg-slate-800 p-8 rounded-lg shadow-lg shadow-orange-900 w-full max-w-xl mx-auto">
+        <form onSubmit={showBookingMessage} className="space-y-6">
           <div className="flex flex-col">
             <label htmlFor="name" className="text-xl text-white mb-2">
               Nom
@@ -250,8 +264,7 @@ export default function Booking() {
             <span className="text-orange-600">newsletter</span>
           </h4>
           <form
-            action="#"
-            method="POST"
+            onSubmit={showToastMessage}
             className="flex justify-center space-x-1"
           >
             <input
@@ -275,6 +288,7 @@ export default function Booking() {
             droits réservés.
           </p>
         </div>
+        <ToastContainer />
       </div>
     </div>
   );

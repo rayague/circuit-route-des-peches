@@ -2,8 +2,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
+  const showToastMessage = () => {
+    toast.success("Votre email a été envoyé avec succeès !", {
+      position: "top-right"
+    });
+  };
+
   return (
     <div className="relative min-h-screen p-8 pb-12 gap-8 sm:p-8 bg-slate-900">
       <div className=" sticky top-2 flex flex-row p-4 items-center justify-between w-full my-8 rounded-lg backdrop-blur-lg border border-orange-400 font-bold z-50">
@@ -26,7 +34,7 @@ export default function Home() {
         </h3>
 
         <Image
-          src="/image3.webp"
+          src="/picture1.webp"
           width={500}
           height={100}
           className="w-full rounded-lg shadow-lg shadow-orange-900"
@@ -47,12 +55,12 @@ export default function Home() {
           époustouflants, ses traditions vivantes et ses plages secrètes.
         </p>
       </div>
-      <div className=" p-4 w-full grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 rounded-md my-8 items-center justify-center">
+      <div className=" p-4 w-full grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 rounded-md mb-32 items-center justify-center">
         {/* Article 1 */}
         <div className=" bg-white max-w-sm rounded-lg overflow-hidden shadow-lg border border-orange-700 mx-auto hover:border-x-orange-500 transition-all hover:drop-shadow-2xl shadow-orange-900">
           <Image
             className="w-full"
-            src="/image1.jpg"
+            src="/blog.png"
             height={500}
             width={500}
             alt="La plage paradisiaque"
@@ -72,12 +80,12 @@ export default function Home() {
               plages vous offriront une sérénité rare, parfaites pour se
               détendre en toute tranquillité.
             </p>
-            <Link
+            {/* <Link
               href="/article1"
               className="bg-orange-500 flex w-full text-center items-center justify-center p-2 my-4 text-white font-bold rounded-md hover:bg-orange-600 transition-all active:outline-1 outline-offset-2 outline-orange-600"
             >
               Détails
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -85,7 +93,7 @@ export default function Home() {
         <div className=" bg-white max-w-sm rounded-lg overflow-hidden shadow-lg border border-orange-700 mx-auto hover:border-x-orange-500 transition-all hover:drop-shadow-2xl shadow-orange-900">
           <Image
             className="w-full"
-            src="/image2.jpg"
+            src="/blog.png"
             height={500}
             width={500}
             alt="Pêcheurs locaux"
@@ -104,12 +112,12 @@ export default function Home() {
               en apprenant leurs traditions séculaires de pêche. Une immersion
               dans la culture authentique du Bénin qui enrichira votre voyage.
             </p>
-            <Link
+            {/* <Link
               href="/article2"
               className="bg-orange-500 flex w-full text-center items-center justify-center p-2 my-4 text-white font-bold rounded-md hover:bg-orange-600 transition-all active:outline-1 outline-offset-2 outline-orange-600"
             >
               Détails
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -117,7 +125,7 @@ export default function Home() {
         <div className=" bg-white max-w-sm rounded-lg overflow-hidden shadow-lg border border-orange-700 mx-auto hover:border-x-orange-500 transition-all hover:drop-shadow-2xl shadow-orange-900">
           <Image
             className="w-full"
-            src="/image4.jpg"
+            src="/blog.png"
             height={500}
             width={500}
             alt="Villages pittoresques"
@@ -137,12 +145,12 @@ export default function Home() {
               habitants, goûtez à leurs spécialités et plongez dans un voyage
               culturel inoubliable.
             </p>
-            <Link
+            {/* <Link
               href="/article3"
               className="bg-orange-500 flex w-full text-center items-center justify-center p-2 my-4 text-white font-bold rounded-md hover:bg-orange-600 transition-all active:outline-1 outline-offset-2 outline-orange-600"
             >
               Détails
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -150,7 +158,7 @@ export default function Home() {
         <div className=" bg-white max-w-sm rounded-lg overflow-hidden shadow-lg border border-orange-700 mx-auto hover:border-x-orange-500 transition-all hover:drop-shadow-2xl shadow-orange-900">
           <Image
             className="w-full"
-            src="/image4.jpg"
+            src="/blog.png"
             height={500}
             width={500}
             alt="Activités nautiques"
@@ -170,12 +178,12 @@ export default function Home() {
               Profitez de la beauté des eaux béninoises et créez des souvenirs
               mémorables.
             </p>
-            <Link
+            {/* <Link
               href="/article4"
               className="bg-orange-500 flex w-full text-center items-center justify-center p-2 my-4 text-white font-bold rounded-md hover:bg-orange-600 transition-all active:outline-1 outline-offset-2 outline-orange-600"
             >
               Détails
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -183,7 +191,7 @@ export default function Home() {
         <div className=" bg-white max-w-sm rounded-lg overflow-hidden shadow-lg border border-orange-700 mx-auto hover:border-x-orange-500 transition-all hover:drop-shadow-2xl shadow-orange-900">
           <Image
             className="w-full"
-            src="/image4.jpg"
+            src="/blog.png"
             height={500}
             width={500}
             alt="Saveurs du Bénin"
@@ -202,12 +210,12 @@ export default function Home() {
               papilles. Dégustez des poissons frais, des fruits tropicaux et des
               plats locaux préparés avec amour et savoir-faire.
             </p>
-            <Link
+            {/* <Link
               href="/article5"
               className="bg-orange-500 flex w-full text-center items-center justify-center p-2 my-4 text-white font-bold rounded-md hover:bg-orange-600 transition-all active:outline-1 outline-offset-2 outline-orange-600"
             >
               Détails
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -215,7 +223,7 @@ export default function Home() {
         <div className=" bg-white max-w-sm rounded-lg overflow-hidden shadow-lg border border-orange-700 mx-auto hover:border-x-orange-500 transition-all hover:drop-shadow-2xl shadow-orange-900">
           <Image
             className="w-full"
-            src="/image2.jpg"
+            src="/blog.png"
             height={500}
             width={500}
             alt="Randonnée en nature"
@@ -234,12 +242,12 @@ export default function Home() {
               époustouflants du Bénin. Des sentiers qui serpentent à travers des
               forêts luxuriantes et des montagnes vous attendent.
             </p>
-            <Link
+            {/* <Link
               href="/article6"
               className="bg-orange-500 flex w-full text-center items-center justify-center p-2 my-4 text-white font-bold rounded-md hover:bg-orange-600 transition-all active:outline-1 outline-offset-2 outline-orange-600"
             >
               Détails
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -247,7 +255,7 @@ export default function Home() {
         <div className=" bg-white max-w-sm rounded-lg overflow-hidden shadow-lg border border-orange-700 mx-auto hover:border-x-orange-500 transition-all hover:drop-shadow-2xl shadow-orange-900">
           <Image
             className="w-full"
-            src="/image1.jpg"
+            src="/blog.png"
             height={500}
             width={500}
             alt="Sites historiques"
@@ -266,12 +274,12 @@ export default function Home() {
               Bénin, tels que les forteresses et les monuments datant de
               l&apos;époque coloniale et de la période royale du Dahomey.
             </p>
-            <Link
+            {/* <Link
               href="/article7"
               className="bg-orange-500 flex w-full text-center items-center justify-center p-2 my-4 text-white font-bold rounded-md hover:bg-orange-600 transition-all active:outline-1 outline-offset-2 outline-orange-600"
             >
               Détails
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -279,7 +287,7 @@ export default function Home() {
         <div className=" bg-white max-w-sm rounded-lg overflow-hidden shadow-lg border border-orange-700 mx-auto hover:border-x-orange-500 transition-all hover:drop-shadow-2xl shadow-orange-900">
           <Image
             className="w-full"
-            src="/image1.jpg"
+            src="/blog.png"
             height={500}
             width={500}
             alt="Les produits artisanaux"
@@ -298,12 +306,12 @@ export default function Home() {
               Bénin, comme les sculptures, les tissus traditionnels et les
               bijoux faits main.
             </p>
-            <Link
+            {/* <Link
               href="/article8"
               className="bg-orange-500 flex w-full text-center items-center justify-center p-2 my-4 text-white font-bold rounded-md hover:bg-orange-600 transition-all active:outline-1 outline-offset-2 outline-orange-600"
             >
               Détails
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -311,7 +319,7 @@ export default function Home() {
         <div className=" bg-white max-w-sm rounded-lg overflow-hidden shadow-lg border border-orange-700 mx-auto hover:border-x-orange-500 transition-all hover:drop-shadow-2xl shadow-orange-900">
           <Image
             className="w-full"
-            src="/image1.jpg"
+            src="/blog.png"
             height={500}
             width={500}
             alt="Excursions en bateau"
@@ -330,12 +338,12 @@ export default function Home() {
               lagunes du Bénin. Explorez la faune et la flore locales tout en
               profitant d&apos;une balade paisible sur l&apos;eau.
             </p>
-            <Link
+            {/* <Link
               href="/article9"
               className="bg-orange-500 flex w-full text-center items-center justify-center p-2 my-4 text-white font-bold rounded-md hover:bg-orange-600 transition-all active:outline-1 outline-offset-2 outline-orange-600"
             >
               Détails
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -343,7 +351,7 @@ export default function Home() {
         <div className=" bg-white max-w-sm rounded-lg overflow-hidden shadow-lg border border-orange-700 mx-auto hover:border-x-orange-500 transition-all hover:drop-shadow-2xl shadow-orange-900">
           <Image
             className="w-full"
-            src="/image1.jpg"
+            src="/blog.png"
             height={500}
             width={500}
             alt="Le marché d'Abomey"
@@ -362,12 +370,12 @@ export default function Home() {
               pour découvrir les produits locaux, l&apos;artisanat et les
               saveurs du Bénin.
             </p>
-            <Link
+            {/* <Link
               href="/article10"
               className="bg-orange-500 flex w-full text-center items-center justify-center p-2 my-4 text-white font-bold rounded-md hover:bg-orange-600 transition-all active:outline-1 outline-offset-2 outline-orange-600"
             >
               Détails
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
@@ -409,8 +417,7 @@ export default function Home() {
             <span className="text-orange-600">newsletter</span>
           </h4>
           <form
-            action="#"
-            method="POST"
+            onSubmit={showToastMessage}
             className="flex justify-center space-x-1"
           >
             <input
@@ -435,6 +442,7 @@ export default function Home() {
           </p>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }
