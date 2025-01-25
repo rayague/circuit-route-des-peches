@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import "leaflet/dist/leaflet.css";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
-import { MapContainer, TileLayer } from "react-leaflet";
+// import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { LatLngExpression } from "leaflet";
+// import { LatLngExpression } from "leaflet";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const center: LatLngExpression = [6.5, 2.5]; // Coordonnée centrale autour du Bénin
-const zoom = 8; // Niveau de zoom
+// const center: LatLngExpression = [6.5, 2.5]; // Coordonnée centrale autour du Bénin
+// const zoom = 8; // Niveau de zoom
 
 export default function Home() {
   const showToastMessage = () => {
@@ -281,7 +281,7 @@ export default function Home() {
         <h1 className="font-bold text-5xl my-5 text-center">
           La Route des Pêches du Bénin - Carte Interactive
         </h1>
-        <div className="mx-auto rounded-md bg-slate-700 w-full h-96 shadow-lg shadow-orange-900">
+        {/* <div className="mx-auto rounded-md bg-slate-700 w-full h-96 shadow-lg shadow-orange-900">
           <MapContainer
             center={center}
             zoom={zoom}
@@ -292,7 +292,7 @@ export default function Home() {
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             />
           </MapContainer>
-        </div>
+        </div> */}
       </div>
 
       <div className="my-32">
