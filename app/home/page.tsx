@@ -291,16 +291,6 @@ export default function Home() {
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             />
-
-            {/* Affichage des marqueurs pour chaque ville */}
-            {/* {markers.map((marker, index) => (
-              <Marker key={index} position={marker.position}>
-                <Popup>{marker.label}</Popup>
-              </Marker>
-            ))} */}
-
-            {/* Affichage de la route entre les villes sous forme de polyline */}
-            {/* <Polyline positions={routeCoordinates} color="blue" weight={4} /> */}
           </MapContainer>
         </div>
       </div>
