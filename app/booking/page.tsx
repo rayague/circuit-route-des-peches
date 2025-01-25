@@ -33,12 +33,12 @@ export default function Booking() {
     setFormData({ ...formData, [name]: value });
   };
 
-  // Typage correct de l'événement pour handleSubmit
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Traiter la soumission du formulaire
-    console.log("Réservation effectuée", formData);
-  };
+  // // Typage correct de l'événement pour handleSubmit
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   // Traiter la soumission du formulaire
+  //   console.log("Réservation effectuée", formData);
+  // };
 
   const showToastMessage = () => {
     toast.success("Votre email a été envoyé avec succeès !", {

@@ -12,18 +12,6 @@ import "react-toastify/dist/ReactToastify.css";
 const center: LatLngExpression = [6.5, 2.5]; // Coordonnée centrale autour du Bénin
 const zoom = 8; // Niveau de zoom
 
-// Liste des villes principales le long de la Route des Pêches du Bénin
-const markers = [
-  { position: [6.35, 2.4], label: "Cotonou" }, // Ville principale
-  { position: [6.5, 2.7], label: "Ouidah" },
-  { position: [6.6333, 2.8667], label: "Grand-Popo" },
-  { position: [6.75, 2.95], label: "Lokossa" },
-  { position: [7.0, 3.2], label: "Comé" }
-];
-
-// Définition de la route entre les différentes villes (en lignes)
-const routeCoordinates = markers.map((marker) => marker.position);
-
 export default function Home() {
   const showToastMessage = () => {
     toast.success("Votre email a été envoyé avec succeès !", {
