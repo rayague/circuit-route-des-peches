@@ -250,44 +250,38 @@ export default function Home() {
             ></iframe>
           </div>
           <div className="mx-auto rounded-md bg-slate-700 w-full h-72 shadow-lg shadow-orange-900 overflow-hidden">
-            <iframe
-              className="w-full h-full object-cover"
-              src="https://www.youtube.com/embed/w_9nYm0ZrgA"
-              title="Video 4"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <video className="w-full h-full object-cover" controls>
+              <source src="/video1.mp4" type="video/mp4" />
+              Votre navigateur ne supporte pas la balise vidéo.
+            </video>
           </div>
           <div className="mx-auto rounded-md bg-slate-700 w-full h-72 shadow-lg shadow-orange-900 overflow-hidden">
-            <iframe
-              className="w-full h-full object-cover"
-              src="https://www.youtube.com/embed/r6Xa76uGgBE"
-              title="Video 5"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <video className="w-full h-full object-cover" controls>
+              <source src="/video2.mp4" type="video/mp4" />
+              Votre navigateur ne supporte pas la balise vidéo.
+            </video>
           </div>
         </div>
       </div>
 
-      <div className="my-32">
+      <div className="mt-32">
         <h1 className="font-bold text-5xl my-5 text-center">
           La Route des Pêches du Bénin - Carte Interactive
         </h1>
-        {/* <div className="mx-auto rounded-md bg-slate-700 w-full h-96 shadow-lg shadow-orange-900">
-          <MapContainer
-            center={center}
-            zoom={zoom}
-            style={{ height: "100%", width: "100%" }}
-          >
-            <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            />
-          </MapContainer>
-        </div> */}
+
+        <Image
+          src="/map.jpeg"
+          className="lg:w-1/2 md:w-2/3 w-full mx-auto"
+          height={500}
+          width={500}
+          alt="Carte de la Route des Pêches du Bénin"
+        ></Image>
+
+        <p className="text-center text-gray-200 mt-4">
+          Découvrez la magnifique Route des Pêches du Bénin, un parcours qui
+          vous emmène à travers les plus belles plages et villages de pêche du
+          pays. Une carte interactive pour explorer cette destination unique !
+        </p>
       </div>
 
       <div className="my-32">
