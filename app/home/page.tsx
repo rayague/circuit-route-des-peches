@@ -3,9 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "leaflet/dist/leaflet.css";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
-// import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-// import { LatLngExpression } from "leaflet";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
