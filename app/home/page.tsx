@@ -9,9 +9,6 @@ import "leaflet/dist/leaflet.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// const center: LatLngExpression = [6.5, 2.5]; // Coordonnée centrale autour du Bénin
-// const zoom = 8; // Niveau de zoom
-
 export default function Home() {
   const showToastMessage = () => {
     toast.success("Votre email a été envoyé avec succeès !", {
