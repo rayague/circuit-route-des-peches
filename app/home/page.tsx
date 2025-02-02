@@ -15,7 +15,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative min-h-screen p-8 pb-12 gap-8 sm:p-8 bg-slate-900">
+    <div className="relative min-h-screen p-8 pb-12 gap-8 sm:p-8 bg-slate-900 flex flex-col">
       <div className=" sticky top-2 flex flex-row p-4 items-center justify-between w-full my-8 rounded-lg backdrop-blur-lg border border-orange-400 font-bold z-50">
         <Link href="" className="text-lg text-orange-600">
           Acceuil
@@ -105,6 +105,12 @@ export default function Home() {
           pêcheurs et des habitants de la région.
         </p>
       </div>
+      <button
+        className="bg-orange-500 font-bold p-3 w-full mx-auto text-white sm:w-1/2 md:w-1/4 lg:w-1/4 focus:ring-2 focus:ring-orange-600 ring-offset-3 rounded mb-12 ring-orange-600"
+        onClick={() => window.open("/Guide.pdf", "_blank")}
+      >
+        Télécharger le guide
+      </button>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div>
